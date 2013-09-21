@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goldengate2"
+    tools:context=".HomeScreenActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/home_screen_welcome_text" />
+
+    <Button
+        android:id="@+id/receiptPhoto"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/trackPayments"
+        android:layout_below="@+id/textView1"
+        android:background="@color/Coral"
+        android:onClick="initiateReceiptPhoto"
+        android:text="@string/home_screen_receipt_photo_button" />
+
+    <Button
+        android:id="@+id/manageReceipts"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/trackPayments"
+        android:layout_below="@+id/receiptPhoto"
+        android:layout_marginTop="18dp"
+        android:background="@color/Coral"
+        android:onClick="goToReceipts"
+        android:text="@string/home_screen_manage_receipts_button" />
+
+    <Button
+        android:id="@+id/trackPayments"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/manageReceipts"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/Coral"
+        android:onClick="goToHistory"
+        android:text="@string/title_activity_payment_history" />
+
+    <Button
+        android:id="@+id/subiitReceipt"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/trackPayments"
+        android:layout_below="@+id/trackPayments"
+        android:layout_marginTop="19dp"
+        android:background="@color/Coral"
+        android:onClick="toastSubmitReceipt"
+        android:text="Submit Receipt" />
+
+</RelativeLayout>

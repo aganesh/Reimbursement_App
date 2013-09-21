@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RoyalBlue"
+    android:noHistory="true"
+    android:orientation="vertical" >
+
+  <TextView
+      android:id="@+id/product_label"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dip"
+      android:textColor="@color/White"
+      android:textSize="25dip"
+      android:textStyle="bold" />
+
+  <Button
+      android:id="@+id/manageReceipts"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:onClick="markAsPaid"
+      android:text="Mark As Paid" />
+  
+  <Button
+      android:id="@+id/manageReceipts"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:onClick="handleDeletion"
+      android:text="Delete Receipt" />
+  
+  <Button
+      android:id="@+id/manageReceipts"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:onClick="goBack"
+      android:text="Return to Receipts" />
+  
+  
+</LinearLayout>
